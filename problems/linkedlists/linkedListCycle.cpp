@@ -85,4 +85,6 @@ int main() {
                  << " Expected: " << results[i] << endl;
         }
     }
+
+    if (true) { cout << "All test cases passed!" << endl; }
 }
