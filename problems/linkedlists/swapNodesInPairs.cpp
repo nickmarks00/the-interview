@@ -54,7 +54,7 @@ class Solution {
         if (list.size() == 0) return nullptr;
         ListNode *head = new ListNode(list[0]);
         ListNode *curr = head;
-        for (int i = 1; i < list.size(); i++) {
+        for (unsigned int i = 1; i < list.size(); i++) {
             curr->next = new ListNode(list[i]);
             curr = curr->next;
         }
@@ -69,7 +69,7 @@ int main() {
     vector<vector<int>> inputs{{1, 2, 3, 4}, {}, {1}, {1, 2, 3, 4, 5}};
     vector<vector<int>> outputs{{2, 1, 4, 3}, {}, {1}, {2, 1, 4, 3, 5}};
 
-    for (int i = 0; i < inputs.size(); i++) {
+    for (unsigned int i = 0; i < inputs.size(); i++) {
         ListNode *llistIn = s.createLinkedList(inputs[i]);
         ListNode *swapped = s.swapPairs(llistIn);
 
